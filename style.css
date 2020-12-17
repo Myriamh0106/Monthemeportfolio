@@ -1,0 +1,285 @@
+/*
+Theme Name: Mon thème portfolio
+Theme URI: https://myriam.com/mesthemes
+Author: Myriam H
+Author URI: https://monurlpersonnel.com
+Description: Le thème développé avec Moi même
+Version: 0.1
+Tags: simple, facile, sans danger, base pour la suite
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400&display=swap');
+@font-face {
+  font-family: MelikaLetterA;
+  src: url(police/MelikaLetterA.ttf) format('truetype');
+}
+
+/* ------- BODY -------- */
+:root {
+  --text-color: #333333;
+  --tonic-color: rgb(255, 255, 255);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin:0;
+  width: 100%;
+  font-family: 'roboto', cursive, sans-serif;
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+
+body > header a,
+body > footer a {
+  color: var(--text-color); /* couleur d'écriture des liens de toute la page*/
+}
+
+
+/*-------- TITRES --------*/
+h1 { 
+  margin-block-start: none;
+  margin-block-end: none;
+  margin-inline-start: none;
+  margin-inline-end: none;
+  font-size: 4.8rem;
+  line-height: 1;
+  font-weight: 100;
+  font-family: MelikaLetterA, cursive, sans-serif;  
+}
+
+h2 {
+  position: relative;
+  line-height: 1.5;
+  font-family:'Merriweather', cursive, sans-serif;
+  letter-spacing: 0.6rem; 
+}
+
+h3 {
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 100px;
+  font-size: 2.6rem;
+  font-family:'merriweather', cursive, sans-serif;
+  font-weight: lighter;
+}
+
+h4 {
+  margin-top: 50px;
+  font-size: 4.5rem;
+  font-weight: normal;
+  font-family: 'roboto', cursive, sans-serif;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: larger;
+  font-family:'merriweather', cursive, sans-serif ;
+}
+
+h6 {
+  font-family:'merriweather', cursive, sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+/*----------------- HEADER ------------------*/  
+/*-------- MENU --------*/
+
+.signature {
+  display: flex;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.linkedinlogo {
+  padding-right: 20px;
+}
+
+.nav_menu {
+  display: flex;
+}
+
+.background {
+  padding-top: 110px;
+  padding-bottom: 60px;
+  background-image: url(../../uploads/2020/11/greenleaf0.jpg);
+  margin: auto;
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 2.8rem;
+  font-weight: lighter;
+}
+
+.toutlemenu {
+  justify-content: space-between;
+  align-items: center; 
+  height: 100px;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  list-style-type: none;
+}
+
+nav ul { /*écriture*/
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  font-weight: normal;
+  font-size: 1.6rem;
+  display: flex;
+  list-style-type: none;
+  font-family: 'roboto', cursive, sans-serif;
+  font-weight: lighter;
+  letter-spacing: 0.2rem;
+  padding-right: 60px;
+  top: 0;
+}
+
+nav ul li {
+  padding-left: 25px;
+}
+
+  
+/*-------- INTRO + CV --------*/
+.slogan {
+  font-family: 'roboto', cursive, sans-serif ;
+  line-height: 1.5;
+  letter-spacing: 0.2rem;
+}
+
+.moncv {
+  font-weight: bolder;
+  color: var(--tonic-color);
+  border: 2px solid white;
+  font-size: 1.6rem;
+  font-family: 'roboto', cursive, sans-serif;
+  padding: 10px 30px 10px 30px;
+  letter-spacing: 0.2rem;
+}
+
+body > header,
+.competences {
+  background-color: rgb(240, 228, 229);
+}
+
+
+/* ------------------ MAIN ------------------- */
+main { /*taille 1420 de la page*/
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0px;
+}
+
+
+/* ------- A PROPOS -------- */
+.bloc1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.propos {
+  font-size: 1.9rem;
+  text-justify: auto;
+  line-height: 3rem;
+  text-align: center;
+  padding: 2em;
+}
+
+
+/* ------- COMPETENCES -------- */
+.competences {
+  margin-top: 80px;
+  text-align: center;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.wp, .xd {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: inline-block;
+}
+
+
+/* ------- PROJETS -------- */
+.collectif,
+.individuel {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 228, 229);
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 100px;
+  padding-right: 25px;
+
+  margin-bottom: 80px;
+  margin-top: 100px;
+}
+
+.individuel {
+  text-align: left;
+}
+
+.projets {
+  text-align: center;
+  max-width: 100%;
+}
+
+.projets2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+
+/* ------------- FOOTER ------------- */
+/* ------- CONTACT -------- */
+.contact {
+  background-image: url(../../uploads/2020/11/greenleaf0.jpg);
+  margin-bottom: -25px;
+}
+  
+.textecontact {
+  font-size: 2.6rem;
+  text-align: center;
+  color: var(--tonic-color);
+}
+  
+.textecontact a {
+  color: var(--tonic-color);
+}
+
+.mail, .phone, .position {
+  fill: var(--tonic-color);
+}
+
+
+/* ------- BACK TO THE TOP -------- */
+.backtothetop {
+  text-align: right;
+  margin-top: -17px;
+  background-color:black;
+  padding: 10px;
+}
+
+
+/* ------- PAGE PROJET COLLECTIF ET PROJET INDIVIDUEL SOUS WORDPRESS -------- */
+.title {
+  text-align: center;
+}
+

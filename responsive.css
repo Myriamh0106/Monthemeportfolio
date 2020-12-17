@@ -1,0 +1,203 @@
+/*-----------------media plus de 601px ----------------*/
+@media screen and (min-width: 601px){
+
+  h2 {
+  font-size: 7rem;
+  }
+
+  .propos {
+   width: 550px;
+  }
+
+  .contact {
+    padding: 110px;
+  }
+
+  /* ---- PAGE PROJET COLLECTIF ET PROJET INDIVIDUEL SOUS WORDPRESS ---- */
+.title {
+  max-width: 900px;
+  padding-left: 400px;
+  padding-right: 400px;
+}
+
+.collectif,
+.individuel {
+  width: 25%;
+}
+
+.projets2 {
+  justify-content: space-around;
+}
+}
+
+
+/*----------------media moins de 600px ---------------*/
+@media screen and (max-width: 600px){
+/* ---- TITRES -----*/
+h4 {
+  font-size: 3rem;
+}
+
+/* ---- BODY -----*/
+body {
+  position: absolute;
+}
+
+/* ---- INTRO + CV -----*/
+.slogan {
+  font-size: 2.2rem;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 0%;
+}
+  
+.bloc1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.texte {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.propos {
+  justify-content: center;
+}
+
+ /* ---- A PROPOS -----*/
+.bloc1 {
+  flex-direction: column;
+}
+.texte {
+  font-size: 2rem;
+}
+
+/* ---- CONTACT -----*/
+.title {
+  margin-top: 100px;
+}
+
+/* ---- PROJETS -----*/
+.projets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projets2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.individuel {
+  margin-bottom: 150px;
+}
+
+
+/* ----- MENU TOGGLE ----- */
+.nav-toggle {
+  width: 30px;
+  height: 30px;
+  position:fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+.nav-toggle-bar,
+.nav-toggle-bar::before,
+.nav-toggle-bar::after {
+  content:"";
+  background-color: black;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  transition: all .4s ease-in-out;
+}
+
+.nav-toggle-bar::before {
+  top: -10px;
+}
+  
+.nav-toggle-bar::after {
+  top: 10px;
+}
+  
+/* Transitions Icone de menu */
+.nav-toggle.active .nav-toggle-bar {
+  transform: rotate(135deg);
+}
+.nav-toggle.active .nav-toggle-bar:before,
+.nav-toggle.active .nav-toggle-bar:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+  
+  
+/* Menu dans son état initial mais fermé */
+.nav_menu {     
+  visibility: hidden;
+  transform: translateX(100vw);
+  position: fixed;
+  background-color:white;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 1;
+  transition: all .3s ease-in-out;
+}
+  
+/* Menu dans son état initial mais ouvert */ 
+.nav_menu.open {
+  visibility: visible;
+  transform: translateX(0);
+}
+  
+.nav_menu.open li {
+  transform: translateX(0);
+  opacity: 1;
+}
+  
+.nav_menu.open li:nth-child(n+1) { transition-delay: .3s;}
+.nav_menu.open li:nth-child(n+2) { transition-delay: .4s;}
+.nav_menu.open li:nth-child(n+3) { transition-delay: .5s;}
+.nav_menu.open li:nth-child(n+4) { transition-delay: .6s;}
+.nav_menu.open li:nth-child(n+5) { transition-delay: .7s;}
+.nav_menu.open .linkedinlogo { transition-delay: .8s;}
+  
+  
+.nav_menu {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2.1rem;
+}
+
+nav ul li {
+  margin-bottom: 30px;
+  transform: translateX(30px);
+  opacity: 0;
+  transition: all .4s ease;
+}
+ 
+nav ul {
+  display: inline;
+}
+  }

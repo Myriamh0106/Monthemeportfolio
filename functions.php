@@ -1,0 +1,33 @@
+<?php
+// ajouter une nouvelle zone de menu à mon thème
+function register_my_menu(){
+ register_nav_menus( array(
+ 'header-menu' => __( 'Menu De Tete')
+ ) );
+ }
+ add_action( 'init', 'register_my_menu', 0 );
+
+
+/**
+     * Enqueues stylesheet and scripts.
+     */
+    /* ------------ Appel du JS et Style ------------ */
+    add_action( 'wp_enqueue_scripts', 'custom_enqueue_scripts' );
+    function custom_enqueue_scripts(){
+        // chargement du script
+        wp_enqueue_script(
+            'jsportfolio', 
+            get_template_directory_uri() . '/script.js', 
+            array( 'jquery' ), 
+            '1.0', 
+            true
+        );
+        // chargement des CSS
+        
+        wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
+        wp_enqueue_style('normalize'); // Enqueue it!
+
+        wp_register_style('responsive', get_template_directory_uri() . '/responsive.css', array(), '1.0', 'all');
+        wp_enqueue_style('responsive'); // Enqueue it!  
+    }
+    
