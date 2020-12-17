@@ -16,7 +16,7 @@ bloginfo('stylesheet_url'); ?>" type="text/css">
     <header>
     <div class="nav-toggle"><div class="nav-toggle-bar"></div></div>
   <div class="toutlemenu">
-      <div class="signature"><a href="#adebut"><h1>myriam hueber</h1></a></div>
+      <div class="signature"><a href="https://www.myriam-hueber.com/#adebut"><h1>myriam hueber</h1></a></div>
     <div class="nav_menu">
           <nav class="menu1">
             <?php
